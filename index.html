@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Smart Home Controller System</title>
+      <meta charset="utf-8" />
+      <link href="favicon.ico" rel="icon" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Smart Home Controller System" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bulma@0.8.1/css/bulma.min.css"
+         type="text/css"
+         rel="stylesheet"
+         h
+      />
+      <link href="bulma-switch.min.css" type="text/css" rel="stylesheet" />
+      <script
+         src="https://kit.fontawesome.com/cf4fab0a5f.js"
+         crossorigin="anonymous"
+      ></script>
+      <link href="index.css" type="text/css" rel="stylesheet" />
+   </head>
+   <body class="has-navbar-fixed-top">
+      <nav
+         class="navbar is-fixed-top"
+         role="navigation"
+         aria-label="main navigation"
+      >
+         <div class="navbar-brand">
+            <a href="#HomePage" class="a">
+               <img src="./smart_home.svg" width="110" height="75" />
+            </a>
+
+            <a
+               role="button"
+               class="navbar-burger burger"
+               aria-label="menu"
+               aria-expanded="false"
+               data-target="navbarContent"
+            >
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+            </a>
+         </div>
+
+         <div class="navbar-menu" id="navbarContent">
+            <div class="navbar-start">
+               <a class="navbar-item a" href="#HomePage">
+                  <span class="icon">
+                     <i class="fas fa-home"></i>
+                  </span>
+                  <span>Home</span>
+               </a>
+               <a class="navbar-item a" href="#LightsPage">
+                  <span class="icon">
+                     <i class="fas fa-lightbulb"></i>
+                  </span>
+                  <span>Lights</span>
+               </a>
+               <a class="navbar-item a" href="#TVPage">
+                  <span class="icon">
+                     <i class="fas fa-tv"></i>
+                  </span>
+                  <span>TV</span>
+               </a>
+               <a class="navbar-item a" href="#FanPage">
+                  <span class="icon">
+                     <i class="fas fa-fan"></i>
+                  </span>
+                  <span>Fan</span>
+               </a>
+            </div>
+            <!--These buttons are just for show-->
+            <div class="navbar-end">
+               <div class="navbar-item">
+                  <div class="buttons">
+                     <button class="button is-primary" aria-disabled="true">
+                        <strong>Sign up</strong>
+                     </button>
+                     <button class="button is-light" aria-disabled="true">
+                        Log in
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <section class="hero is-fullheight-with-navbar" id="HomePage">
+         <img src="./smart_home.svg" alt="smart home" />
+         <div class="hero-body">
+            <div class="container has-text-centered">
+               <h1 class="title is-spaced is-1">
+                  Smart Home Controller System
+               </h1>
+               <a href="#LightsPage" class="button is-primary subtitle is-4 a"
+                  >Let's start with Lights</a
+               >
+            </div>
+         </div>
+      </section>
+      <section class="hero is-fullheight-with-navbar is-hidden" id="LightsPage">
+         <img src="./lighthouse_off.svg" alt="lighthouse" />
+         <div class="hero-body">
+            <div class="container has-text-centered">
+               <header class="title is-2 is-spaced">Lights Control</header>
+               <div class="field">
+                  <input
+                     type="checkbox"
+                     id="lightButton"
+                     class="switch is-rounded is-success is-large"
+                  />
+                  <label for="lightButton"></label>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="hero is-fullheight-with-navbar is-hidden" id="TVPage">
+         <img src="./monitor.svg" alt="monitor" />
+         <div class="hero-body">
+            <div class="container has-text-centered">
+               <header class="title is-2 is-spaced">TV Control</header>
+               <div class="field">
+                  <input
+                     type="checkbox"
+                     id="tvButton"
+                     class="switch is-rounded is-success is-large"
+                  />
+                  <label for="tvButton"></label>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="hero is-fullheight-with-navbar is-hidden" id="FanPage">
+         <i class="fas fa-fan fa-10x"></i>
+
+         <div class="hero-body">
+            <div class="container has-text-centered">
+               <header class="title is-2 is-spaced">Fan Speed Control</header>
+               <div id="radioDiv" class="field subtitle has-text-centered">
+                  <span>
+                     <input
+                        type="radio"
+                        name="fanRadio"
+                        id="fanRadio0"
+                        value="0"
+                        class="is-hidden"
+                     />
+                     <label for="fanRadio0" class="button">0</label>
+                  </span>
+                  <span>
+                     <input
+                        type="radio"
+                        name="fanRadio"
+                        id="fanRadio1"
+                        value="60"
+                        class="is-hidden"
+                     />
+                     <label for="fanRadio1" class="button">1</label>
+                  </span>
+                  <span>
+                     <input
+                        type="radio"
+                        name="fanRadio"
+                        id="fanRadio2"
+                        value="120"
+                        class="is-hidden"
+                     />
+                     <label for="fanRadio2" class="button">2</label>
+                  </span>
+                  <span>
+                     <input
+                        type="radio"
+                        name="fanRadio"
+                        id="fanRadio3"
+                        value="180"
+                        class="is-hidden"
+                     />
+                     <label for="fanRadio3" class="button">3</label>
+                  </span>
+                  <span>
+                     <input
+                        type="radio"
+                        name="fanRadio"
+                        id="fanRadio4"
+                        value="245"
+                        class="is-hidden"
+                     />
+                     <label for="fanRadio4" class="button">4</label>
+                  </span>
+               </div>
+
+               <header class="subtitle is-2">Temperature</header>
+               <div class="subtitle" id="tempDiv"></div>
+            </div>
+         </div>
+      </section>
+      <script src="boltiotfetch.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         // The following line will set the api key and device name. It will be auto-initialized by Bolt cloud.
+         setKey('{{ApiKey}}', '{{Name}}')
+      </script>
+      <script src="index.js" type="text/javascript"></script>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+.title.is-spaced {
+   margin-bottom: 2em;
+}
+input[name='fanRadio'] + label {
+   margin-top: 0.25em;
+   margin-bottom: 2em;
+}
+.navbar-item.a {
+   padding-left: 3.75vw;
+   padding-right: 0.25rem;
+}
+
+.hero img,
+.hero svg {
+   position: absolute;
+   align-self: center;
+   top: 3.25rem;
+   max-width: 100%;
+   max-height: calc(100vh - 3.25rem);
+   opacity: 0.3;
+   z-index: -1;
+}
+.hero-body {
+   z-index: 2;
+}
+#FanPage svg {
+   font-size: calc(25vh + 25vw);
+}
+.navbar-brand img {
+   max-height: 3.25rem;
+}
